@@ -94,11 +94,52 @@
  .skills__name{
     text-align: center;
      font-size: 25px;
-     padding:10px
+     padding: 15px;
  }
- 
+
+ .projetos__title{
+    font-size: 35px;
+    text-align: center;
+    color:rgb(26,58,69);
+    padding:50px;
+}
+
+.projetos__box{
+    font-size: 20px;
+}
+
+.projetos__name{
+    color:#00769d;
+    font-size: 38px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    padding:40px 0px 20px 350px;
+}
+
+.geek_demo{
+    padding: 210px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #728fa6;
+}
+
+.flix_demo{
+    padding: 210px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #728fa6;
+} 
+
+.geek_img{
+    padding: 70px;
+}
+
+.flix_img{
+    padding: 70px;
+}
+
  .hobbies__title{
-    padding: 30px 0px 0px 0px;
+    padding: 68px 0px 10px 0px;
      font-size: 35px;
      color:rgb(26,58,69);
      text-align: center;
@@ -152,10 +193,44 @@
     padding:75px 0px 0px 0px;
  text-align: center;
  }
- @media (min-width:590px) {
-    .menu__list{
-        display:flex;
+ @media (max-width: 768px) {
+    .menu__list {
+        display: flex;
         justify-content: center;
-       
+        
     }
- }
+
+    .projetos__name {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .geek_demo, .flix_demo {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .geek_img, .flix_img {
+        padding: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu__title {
+        font-size: 24px;
+    }
+
+    .skills_title, .abouttitle, .projetostitle, .hobbies_title, 
+    .academic_title, .formcontato_title {
+        font-size: 24px;
+    }
+
+    .skills_name, .aboutparagraph, .projetosname, .title_bio, 
+    .title__subsection, .geek_demo, .flix_demo {
+        font-size: 16px;
+    }
+}
